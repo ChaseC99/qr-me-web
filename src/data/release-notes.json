@@ -4,6 +4,11 @@
     "source": "https://apps.apple.com/us/app/qr-me-contact/id1412627381",
     "releases": [
       {
+        "version": "4.0",
+        "date": "2026-11-07",
+        "notes": "### New Styling Options\n\n- The Professional Branding upgrade now lets you customize the shapes and styles of your QR code\n- Pixels - Choose from 43 stylish shapes, including diamonds, stars, hearts, and more\n- Eyes - Give the three corner markers their own look, with dozens of fun shapes to choose from\n- Corners - Round the corners as much as you like, all the way to a circle\n- Border spacing - Adjust the space around your QR code\n\n### Redesigned Contact and Style Editors\n\n- Updated Contact and Style tabs with a cleaner, more modern design\n- A new scan checker warns when your QR code may be difficult to scan and suggests ways to improve it\n- Birthday picker now lets you omit the year, so you can only share the month and day\n- An improved color picker lets you use the eyedropper to pick a color directly from your logo\n\n### Bug Fixes and Improvements\n\n- Fixed a bug that could cause a rare crash when the app was in the background\n- Improved VoiceOver support for cropping logos, switching between QR codes, and managing purchases\n- Added an Acknowledgements page to recognize the open-source projects that help power QR Me\n- Code cleanup and optimizations"
+      },
+      {
         "version": "3.14",
         "date": "2026-09-30",
         "notes": "### Improved Contact Editor\n\n- Separate Contact and Style tabs make it easier to edit your contact information and customize your QR code\n- Preview your QR code as you change its colors and logo\n\n### Widget Improvements\n\n- Fixed an issue that prevented older widgets from rendering\n- Fixed a background color mismatch for widgets on iOS 26"
