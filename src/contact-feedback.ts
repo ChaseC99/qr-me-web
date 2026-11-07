@@ -22,6 +22,20 @@ export function feedbackFromSearch(search: string): Feedback {
     };
 }
 
+export function feedbackGoogleFormUrl(feedback: Feedback): string {
+    const params = new URLSearchParams({
+        usp: 'pp_url',
+        'entry.1498958727': feedback.platform,
+        'entry.1513953391': feedback.message,
+        'entry.1473862599': feedback.device,
+        'entry.388596581': feedback.osVersion,
+        'entry.571404993': feedback.qrmeVersion,
+        'entry.1939801648': feedback.supportId,
+    });
+
+    return `https://docs.google.com/forms/d/e/1FAIpQLSfTgzERT5XvIN8HsecAvqo3eb_gfAOjD-hd2j2FTfi4pcDm-Q/viewform?${params}`;
+}
+
 export function feedbackMailto(feedback: Feedback, submittedAt: Date = new Date()): string | null {
     const message = feedback.message.trim();
     if (!feedback.platform || !message) return null;

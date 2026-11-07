@@ -1,6 +1,5 @@
 import { useEffect, useId, useState, type FormEvent } from 'react';
-import { SUPPORT_EMAIL } from '../constants';
-import { feedbackMailto, feedbackFromSearch, type Feedback } from '../contact-feedback';
+import { feedbackMailto, feedbackGoogleFormUrl, feedbackFromSearch, type Feedback } from '../contact-feedback';
 import './ContactForm.css';
 
 const deviceFields = [
@@ -82,7 +81,7 @@ export default function ContactForm() {
                 <div className="contact-send">
                     <button type="submit" disabled={!feedback.platform || !feedback.message.trim()} aria-describedby={`${id}-send-help`}>Send</button>
                     <p id={`${id}-send-help`} className="contact-send-help">
-                        Email didn’t open? Reach out to <a href={`mailto:${SUPPORT_EMAIL}`} target="_blank">{SUPPORT_EMAIL}</a>
+                        Email didn’t open? Try this <a href={feedbackGoogleFormUrl(feedback)} target="_blank" rel="noopener noreferrer">Google Form</a>.
                     </p>
                 </div>
             </form>
